@@ -11,8 +11,20 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary": "#1D3C56",
+        "secondary": "#A7BEC7",
+        "tertiary": "#D9D9D9",
+        "gray": "#F2F2F2"
       },
     },
+    screens: {
+      xs: "480px",
+      sm: "680px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      xxl: "1536px"
+    }
   },
   plugins: [],
 } satisfies Config;
