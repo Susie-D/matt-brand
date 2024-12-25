@@ -17,9 +17,9 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-between">
             <div className={`${navbarBackground} fixed top-0 z-40 w-full py-6 lg:px-10 px-6`}>
-                <div className="flex sm:justify-end justify-start">
+                <div className="flex justify-evenly">
                     <div className="flex lg:w-full md:gap-16 sm:gap-8 justify-between items-center max-auto w-5/6">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-6">
                             <Image width={45} height={45} src="./nav.svg" alt="linkedin logo" />
                             <Link href="/" target="_self">
                                 <h1 className="text-white xs:text-base sm:text-2xl font-semibold italic">Matt, Project Manager</h1>

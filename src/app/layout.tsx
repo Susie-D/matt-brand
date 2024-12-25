@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  // title: "Matt Schober",
+  // title: "Matt",
   description: "Cloud Technical Project Manager",
 };
 
