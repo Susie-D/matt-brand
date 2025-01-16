@@ -3,9 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 
-// interface Props {
-//     isTopOfPage: boolean;
-// }
 
 const Navbar = () => {
     const navbarBackground = "bg-primary drop-shadow";
