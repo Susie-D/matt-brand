@@ -5,7 +5,6 @@ export const getContentNav = async() => {
     const query = `#graphql
     query NavbarCollection {
         navbarCollection {
-            
             items {
             callToActionsCollection {
                 items {

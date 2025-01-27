@@ -1,15 +1,12 @@
-"use client";
+import { getContentNav } from "@/content/queries";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
 
+export default async function Navbar() {
+    const data = await getContentNav();
+    const content = data.navbarCollection.items[0];
 
-const Navbar = () => {
     const navbarBackground = "bg-primary drop-shadow";
-
-    const handleClick = () => {
-        console.log("button click");
-    }
 
     return (
         <nav className="flex items-center justify-between">
@@ -19,15 +16,16 @@ const Navbar = () => {
                         <div className="flex items-center gap-6">
                             <Image width={45} height={45} src="./nav.svg" alt="linkedin logo" />
                             <Link href="/" target="_self">
-                                <h1 className="text-white xs:text-base sm:text-2xl font-semibold italic">Matt, Project Manager</h1>
+                                <h1 className="text-white xs:text-base sm:text-2xl font-semibold border-solid border-secondary">{content.navHeader}</h1>
                             </Link>
                         </div>
                         <div className="flex gap-4">
                             <Image width={45} height={45} src="./linkedin.svg" alt="linkedin logo" />
                             <Link href="/contact">
-                                <Button className="lg:px-8 px-4 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary" onClick={() => handleClick()}>
-                                    <span className="text-nowrap font-bold lg:text-base text-sm">Let&apos;s Chat</span>
-                                </Button>
+                                <button className="lg:px-8 px-4 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
+                                    <span className="text-nowrap font-bold lg:text-base text-sm">{content.callToActionsCollection.items[0].label}
+                                    </span>
+                                </button>
                             </Link>
                         </div>
                     </div>
@@ -36,5 +34,3 @@ const Navbar = () => {
         </nav>
     )
 }
-
-export default Navbar;

@@ -16,8 +16,8 @@ async function Home() {
       {/* Intro */}
       <div className="bg-white h-[400px]">
         <div>
-          <h3>Hey, I'm Matt.</h3>
-          <h4>I help</h4>
+          <h3>{`Hey, I'm Matt`}</h3>
+          <h4>{`As a Project Manager with strong technical expertise, I lead cloud projects to from start to finish.`}</h4>
         </div>
       </div>
       {/* Banner */}
