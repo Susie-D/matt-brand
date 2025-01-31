@@ -11,25 +11,39 @@ export default async function Navbar() {
     return (
         <header className="absolute w-full z-30">
             <nav className="hidden md:flex md:grow items-center justify-between">
-                <div className={`${navbarBackground} fixed top-0 z-40 w-full py-6 lg:px-10 px-6`}>
-                    <div className="flex justify-evenly">
-                        <div className="flex lg:w-full md:gap-16 sm:gap-8 justify-between items-center max-auto w-5/6">
-                            <div className="flex items-center gap-6">
-                                {/* <Image width={45} height={45} src="./nav.svg" alt="hamburger menu" /> */}
+                <div className={`${navbarBackground} fixed top-0 z-40 w-full py-6 px-2`}>
+                    <div className="content-center">
+                        <ul className="flex items-center justify-between gap-4 sm:gap-2">
+                            <li>
                                 <Link href="/" target="_self">
-                                    <h1 className="text-white xs:text-base sm:text-2xl font-semibold border-solid border-secondary">{content.navHeader}</h1>
+                                    <h1 className="items-center text-white md:text-base mx-4 text-nowrap font-semibold border-solid border-secondary ">{content.navHeader}</h1>
                                 </Link>
-                            </div>
-                            <div className="flex gap-4">
-                                <Image width={45} height={45} src="./linkedin.svg" alt="linkedin logo" />
+                            </li>
+                            <li>
+                                <Link className="lg:text-sm md:text-xs text-slate-300 hover:text-primary hover:bg-white text-nowrap p-4 rounded-md font-semibold" href="#home">Home</Link>
+                            </li>
+                            <li>
+                                <Link className="lg:text-sm md:text-xs text-slate-300 hover:text-primary hover:bg-white text-nowrap p-4 rounded-md font-semibold" href="#case-studies">Case Studies</Link>
+                            </li>
+                            <li>
+                                <Link className="lg:text-sm md:text-xs text-slate-300 hover:text-primary hover:bg-white p-4 rounded-md font-semibold" href="#testimonials">Testimonials</Link>
+                            </li>
+                            <li>
+                                <Link className="lg:text-sm md:text-xs text-slate-300 hover:text-primary hover:bg-white p-4 rounded-md font-semibold" href="#about">About</Link>
+                            </li>
+                            <li>
+                                <Link className="lg:text-sm md:text-xs text-slate-300 hover:text-primary hover:bg-white p-4 rounded-md font-semibold" href="#contact">Contact</Link>
+                            </li>
+                            <li className="flex gap-4">
+                                <Image width={35} height={35} src="./linkedin.svg" alt="linkedin logo" />
                                 <Link href="/contact">
-                                    <button className="lg:px-8 px-4 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
-                                        <span className="text-nowrap font-bold lg:text-base text-sm">{content.callToActionsCollection.items[0].label}
+                                    <button className="lg:px-4 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
+                                        <span className="text-nowrap font-bold lg:text-sm text-sm">{content.callToActionsCollection.items[0].label}
                                         </span>
                                     </button>
                                 </Link>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>

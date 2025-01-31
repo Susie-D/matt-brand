@@ -1,6 +1,5 @@
 'use client'
 
-
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from 'next/link';
@@ -35,8 +34,8 @@ export default function MobileMenu() {
     return (
         <div className="md:hidden flex items-center ml-4">
             {/* Hamburger button */}
-            <Image width={50} height={50} src="./nav.svg" alt="hamburger menu"
-                className={`fixed top-4 pt-5 hamburger ${mobileNavOpen && 'active'}`}
+            <Image width={55} height={55} src="./nav.svg" alt="hamburger menu"
+                className={`fixed top-5 ml-2 mb-2 hamburger ${mobileNavOpen && 'active'}`}
                 aria-controls="mobile-nav"
                 aria-expanded={mobileNavOpen}
                 onClick={() => setMobileNavOpen(!mobileNavOpen)} />
@@ -45,26 +44,28 @@ export default function MobileMenu() {
             <nav
                 id="mobile-nav"
                 ref={mobileNav}
-                className="fixed -z-0 top-6 left-2 w-[95%] h-full px-0 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
-                style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
+                className={`fixed top-4 left-0 w-full h-full px-0 sm:px-4 transition-all duration-300 ease-in-out overflow-y-auto`}
+                style={mobileNavOpen
+                    ? { maxHeight: '100%', opacity: 1, pointerEvents: 'auto' }
+                    : { maxHeight: 0, opacity: 0.25, pointerEvents: 'none' }}
                 onClick={() => setMobileNavOpen(!mobileNavOpen)}
             >
                 <ul className="[background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] rounded-lg  py-2">
-                    <XMarkIcon className="h-14 ml-2 mb-6 text-slate-300" />
+                    <XMarkIcon className="h-12 ml-6 mt-2 mb-4 text-slate-300" />
                     <li>
-                        <Link className="flex text-2xl text-slate-300 hover:text-white py-5 px-16 hover:bg-" href="/about">Home</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#home">Home</Link>
                     </li>
                     <li>
-                        <Link className="flex text-2xl text-slate-300 hover:text-white py-5 px-16" href="/integrations">Case Studies</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#case-studies">Case Studies</Link>
                     </li>
                     <li>
-                        <Link className="flex text-2xl text-slate-300 hover:text-white py-5 px-16" href="/pricing">Testimonials</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#testimonials">Testimonials</Link>
                     </li>
                     <li>
-                        <Link className="flex text-2xl text-slate-300 hover:text-white py-5 px-16" href="/customers">About</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#about">About</Link>
                     </li>
                     <li>
-                        <Link className="flex text-2xl text-slate-300 hover:text-white py-5 px-16" href="/changelog">Contact</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#contact">Contact</Link>
                     </li>
                 </ul>
             </nav >
