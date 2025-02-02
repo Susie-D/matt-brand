@@ -13,7 +13,7 @@ export default async function Navbar() {
             <nav className="hidden md:flex md:grow items-center justify-between">
                 <div className={`${navbarBackground} fixed top-0 z-40 w-full py-6 px-2`}>
                     <div className="content-center">
-                        <ul className="flex items-center justify-between gap-4 sm:gap-2">
+                        <ul className="flex items-center justify-around gap-4 sm:gap-2">
                             <li>
                                 <Link href="/" target="_self">
                                     <h1 className="items-center text-white md:text-base mx-4 text-nowrap font-semibold border-solid border-secondary ">{content.navHeader}</h1>
@@ -37,8 +37,8 @@ export default async function Navbar() {
                             <li className="flex gap-4">
                                 <Image width={35} height={35} src="./linkedin.svg" alt="linkedin logo" />
                                 <Link href="/contact">
-                                    <button className="lg:px-4 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
-                                        <span className="text-nowrap font-bold lg:text-sm text-sm">{content.callToActionsCollection.items[0].label}
+                                    <button className="lg:px-2 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
+                                        <span className="text-nowrap font-bold mx-2 lg:text-xs text-sm">{content.callToActionsCollection.items[0].label}
                                         </span>
                                     </button>
                                 </Link>
