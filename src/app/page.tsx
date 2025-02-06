@@ -1,69 +1,44 @@
-"use server"
-
+import Image from "next/image";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
-async function Home() {
+async function Page() {
   return (
     <div className="app">
       <Navbar />
-      <video autoPlay={false} muted={true} loop width="100%" height="600">
+      <video muted loop width="100%" height="600">
         <source src="downtown.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="bg-secondary h-[200px] content-center justify-center px-5 text-white px-5">
-        <h2 className="text-2xl italic text-center font-bold">Driving Cloud Projects Forward with Excellence and Strategy</h2>
+      <div className="bg-secondary h-[200px] flex items-center justify-center px-5 text-white">
+        <h2 className="text-2xl italic text-center font-bold">
+          Driving Cloud Projects Forward with Excellence and Strategy
+        </h2>
       </div>
-      {/* Intro */}
-      <section id="home" className="bg-white h-[400px] mx-auto w-[80%] pt-24 pb-32">
-        <div>
-          <div className="md:w-4/5">
-            <h3>{`Hey, I'm Matt`}</h3>
-            <h4>{`As a Project Manager with strong technical expertise, I lead cloud projects to from start to finish.`}</h4>
-            <button>{`Work with Me`}</button>
-          </div>
-          <div className="mt-5 justify-between gap-24 md:flex">
-            <div className="mt-10 basis-3/5 md:mt-0">
-              <img src="matt.svg" alt="matt's photo" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Home />
       {/* Banner */}
-      <section className="bg-secondary h-[200px] w-full content-center justify-items-center text-black">
-        {/* First */}
-        <div>
-          <div>
-            Icon 1
+      <section className="bg-secondary h-[200px] w-full flex justify-center text-black">
+        <div className="flex content-center justify-center gap-20">
+          {/* First */}
+          <div className="flex flex-col content-center justify-center items-center m-10">
+            <Image width={80} height={80} src="./consulting.svg" alt="matt's photo" />
+            <h4 className="font-bold">Consulting 11+ Years</h4>
+            <p className="text-center">Work at dozens of corporate clients and international exposure.</p>
           </div>
-          <div>
-            Title
+          {/* Second */}
+          <div className="flex flex-col content-center justify-center items-center m-10">
+            <Image width={80} height={80} src="./buildings.svg" alt="matt's photo" />
+            <h4 className="font-bold">Fortune 500 Exposure</h4>
+            <p className="text-center">Effective in some of the highest stakes and chaotic environments.</p>
           </div>
-          <div>
-            SubTitle
-          </div>
-        </div>
-        {/* Second */}
-        <div>
-          <div>
-            Icon 2
-          </div>
-          <div>
-            Title
-          </div>
-          <div>
-            SubTitle
-          </div>
-        </div>
-        {/* Third */}
-        <div>
-          <div>
-            Icon 3
-          </div>
-          <div>
-            Title
-          </div>
-          <div>
-            SubTitle
+          {/* Third */}
+          <div className="flex flex-col content-center justify-center items-center m-10">
+            <Image width={70} height={65} src="./ribbon.svg" alt="matt's photo" />
+            <h4 className="font-bold">Proven Track Record</h4>
+            <p className="text-center">
+              Careers at Deloitte (13) and Slalom Consulting (17) <br />
+              *Fortune Top Workplaces
+            </p>
           </div>
         </div>
       </section>
@@ -71,4 +46,4 @@ async function Home() {
   );
 }
 
-export default Home;
+export default Page; 
