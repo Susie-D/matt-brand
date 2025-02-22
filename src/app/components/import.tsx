@@ -7,7 +7,7 @@ import mn from "../../../public/mn.png";
 import mt from "../../../public/montana.png";
 import pa from "../../../public/pa.png";
 import paypal from "../../../public/paypal.png";
-import smartprop from "../../../public/smartprop.png";
+import rt from "../../../public/rt.svg";
 import threeM from "../../../public/threem.png";
 import verbidio from "../../../public/verbidio.png";
 
@@ -21,6 +21,8 @@ export {
   mt,
   pa,
   paypal,
-  smartprop, threeM, verbidio
+  rt,
+  threeM,
+  verbidio
 };
 

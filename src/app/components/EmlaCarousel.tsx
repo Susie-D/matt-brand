@@ -12,12 +12,13 @@ type ImageType = {
 };
 
 type PropType = {
-    images?: ImageType[]; // Marking images as optional
+    images?: ImageType[];
     options?: EmblaOptionsType;
+    duration?: number;
 };
 
-const EmblaCarousel: React.FC<PropType> = ({ images = [], options }) => {
-    const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
+const EmblaCarousel: React.FC<PropType> = ({ images = [], options, duration = 3000 }) => {
+    const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: duration })]);
 
     return (
         <section className="embla">

@@ -8,12 +8,14 @@ export const images = [
     { src: '/mn.png', alt: 'MN Department logo' },
     { src: '/montana.png', alt: 'Montana logo' },
     { src: '/paypal.png', alt: 'PayPal logo' },
-    { src: '/smartprop.png', alt: 'SmartProperty logo' },
+    { src: '/rt.png', alt: 'Restaurant Technologies logo' },
     { src: '/verbidio.png', alt: 'Verbidio logo' }
 ];
 
 
 import laptop from "../../public/laptop.svg";
+import sky from "../../public/sky.svg";
 import street from "../../public/street.svg";
 
-export { laptop, street };
+export { laptop, sky, street };
+
