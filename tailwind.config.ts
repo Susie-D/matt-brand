@@ -14,7 +14,8 @@ export default {
         "primary": "#1D3C56",
         "secondary": "#A7BEC7",
         "tertiary": "#D9D9D9",
-        "gray": "#F2F2F2"
+        "gray": "#F2F2F2",
+        "green": "#5CA79C"
       },
     },
     screens: {

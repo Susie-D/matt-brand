@@ -1,11 +1,12 @@
 import { images } from '@/shared/images';
 import '../app/globals.css';
+import AboutMe from './components/AboutMe';
 import CaseStudies from "./components/CaseStudies";
+import Contact from './components/Contact';
 import EmblaCarousel from "./components/EmlaCarousel";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Testimonials from './components/Testimonials';
-import AboutMe from './components/AboutMe';
 
 async function Page() {
   return (
@@ -21,11 +22,11 @@ async function Page() {
         </h2>
       </div>
       <Home />
-      {/* Banner */}
       <CaseStudies />
       <EmblaCarousel images={images} duration={2000} options={{ loop: true }} />
       <Testimonials />
-      <AboutMe/>
+      <AboutMe />
+      <Contact />
     </div>
   );
 }

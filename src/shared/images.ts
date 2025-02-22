@@ -12,10 +12,10 @@ export const images = [
     { src: '/verbidio.png', alt: 'Verbidio logo' }
 ];
 
-
 import laptop from "../../public/laptop.svg";
+import phone from "../../public/phone.svg";
 import sky from "../../public/sky.svg";
 import street from "../../public/street.svg";
 
-export { laptop, sky, street };
+export { laptop, phone, sky, street };
 
