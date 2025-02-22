@@ -1,9 +1,10 @@
+import { images } from '@/shared/images';
 import '../app/globals.css';
-import { images } from '../shared/images';
 import CaseStudies from "./components/CaseStudies";
 import EmblaCarousel from "./components/EmlaCarousel";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Testimonials from './components/Testimonials';
 
 async function Page() {
   return (
@@ -22,7 +23,8 @@ async function Page() {
       {/* Banner */}
       <CaseStudies />
       <EmblaCarousel images={images} options={{ loop: true }} />
-    </div>
+      <Testimonials />
+    </div >
   );
 }
 

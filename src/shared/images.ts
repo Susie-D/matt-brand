@@ -11,3 +11,9 @@ export const images = [
     { src: '/smartprop.png', alt: 'SmartProperty logo' },
     { src: '/verbidio.png', alt: 'Verbidio logo' }
 ];
+
+
+import laptop from "../../public/laptop.svg";
+import street from "../../public/street.svg";
+
+export { laptop, street };

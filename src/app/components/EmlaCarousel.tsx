@@ -26,7 +26,6 @@ const EmblaCarousel: React.FC<PropType> = ({ images = [], options }) => {
                     {images.map((image, index) => (
                         <div className="embla__slide" key={index}>
                             <img
-                                // className='pt-10'
                                 src={image.src}
                                 alt={image.alt}
                                 style={{

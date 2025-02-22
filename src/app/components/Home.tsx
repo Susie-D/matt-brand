@@ -35,16 +35,18 @@ const Home = () => {
                     <div className="flex flex-col content-center justify-center items-center m-10">
                         <Image width={80} height={80} src="./buildings.svg" alt="building icon" />
                         <h4 className="font-bold">Fortune 500 Exposure</h4>
-                        <p className="text-center">Effective in some of the highest stakes and chaotic environments.</p>
+                        <p className="text-center">Thrives in fast high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
                     </div>
                     {/* Third */}
                     <div className="flex flex-col content-center justify-center items-center m-10">
                         <Image width={60} height={50} className="pt-5" src="./ribbon.svg" alt="ribbon icon" />
                         <h4 className="font-bold">Proven Track Record</h4>
-                        <p className="text-center">
-                            Careers at Deloitte (13) and Slalom Consulting (17) <br />
-                            *Fortune Top Workplaces
-                        </p>
+                        <span className="text-center">
+                            Careers at Deloitte (13)* and Slalom Consulting (17)* <br />
+                            <p className="text-xs italic">
+                                *Fortune Top Workplaces
+                            </p>
+                        </span>
                     </div>
                 </div>
             </section>
