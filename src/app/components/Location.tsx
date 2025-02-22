@@ -5,12 +5,11 @@ export default function Location() {
             <div className="grid md:grid-cols-2">
                 <img src="MSP.svg" alt="phone and accessories" className="w-full h-auto" />
                 <div className="flex flex-col items-center justify-center content-center space-y-4">
-
                     <div className="text-xl">
                         <p className="text-xl">
                             60 South 6th Street, Suite 2800
                             <br />
-                            Minneapolis, MN 55401
+                            Minneapolis, MN&nbsp; 55401
                         </p>
                         <br />
                         <p className="font-bold">Hours</p>

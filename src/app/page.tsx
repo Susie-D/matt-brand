@@ -4,6 +4,7 @@ import AboutMe from './components/AboutMe';
 import CaseStudies from "./components/CaseStudies";
 import Contact from './components/Contact';
 import EmblaCarousel from "./components/EmlaCarousel";
+import Footer from './components/Footer';
 import Home from "./components/Home";
 import Location from './components/Location';
 import Navbar from "./components/Navbar";
@@ -29,6 +30,7 @@ async function Page() {
       <AboutMe />
       <Contact />
       <Location />
+      <Footer />
     </div>
   );
 }
