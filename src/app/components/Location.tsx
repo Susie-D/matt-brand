@@ -2,7 +2,7 @@
 export default function Location() {
     return (
         <section className="bg-secondary">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2">
                 <img src="MSP.svg" alt="phone and accessories" className="w-full h-auto" />
                 <div className="flex flex-col items-center justify-center content-center space-y-4">
 
