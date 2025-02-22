@@ -5,6 +5,7 @@ import CaseStudies from "./components/CaseStudies";
 import Contact from './components/Contact';
 import EmblaCarousel from "./components/EmlaCarousel";
 import Home from "./components/Home";
+import Location from './components/Location';
 import Navbar from "./components/Navbar";
 import Testimonials from './components/Testimonials';
 
@@ -27,6 +28,7 @@ async function Page() {
       <Testimonials />
       <AboutMe />
       <Contact />
+      <Location />
     </div>
   );
 }
