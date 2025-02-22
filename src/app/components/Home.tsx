@@ -5,7 +5,7 @@ import Image from "next/image";
 const Home = () => {
     return (
         <>
-            <section id="home" className="flex items-center bg-white h-[400px] px-20 gap-16 overflow-auto">
+            <section id="home" className="flex items-center bg-white h-auto px-20 gap-16 overflow-auto">
                 <div className="flex content-center justify-center ml-auto w-5/6">
                     <div className="text-primary">
                         <h3 className="text-4xl my-2">{`Hey, I'm Matt`}</h3>
@@ -21,35 +21,31 @@ const Home = () => {
                         <Image width={1034} height={961} className="max-h-85" layout="responsive" objectFit="contain" src="./matt.svg" alt="matt's photo" />
                     </div>
                 </div>
-
             </section>
-            <section className="bg-secondary h-[200px] w-full flex justify-center text-black">
-                <div className="flex content-center justify-center gap-20">
+            <section className="bg-secondary h-auto w-full flex justify-center text-black py-10">
+                <div className="flex flex-wrap md:grid md:grid-cols-3 gap-10 md:gap-20 justify-center max-w-5xl">
                     {/* First */}
-                    <div className="flex flex-col content-center justify-center items-center m-10">
+                    <div className="flex flex-col items-center text-center p-5 max-w-xs">
                         <Image width={80} height={80} src="./consulting.svg" alt="people icon" />
-                        <h4 className="font-bold">Consulting 11+ Years</h4>
-                        <p className="text-center">Work at dozens of corporate clients and international exposure.</p>
+                        <h4 className="font-bold mt-3">Consulting 11+ Years</h4>
+                        <p>Work at dozens of corporate clients and international exposure.</p>
                     </div>
                     {/* Second */}
-                    <div className="flex flex-col content-center justify-center items-center m-10">
+                    <div className="flex flex-col items-center text-center p-5 max-w-xs">
                         <Image width={80} height={80} src="./buildings.svg" alt="building icon" />
-                        <h4 className="font-bold">Fortune 500 Exposure</h4>
-                        <p className="text-center">Thrives in fast high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
+                        <h4 className="font-bold mt-3">Fortune 500 Exposure</h4>
+                        <p>Thrives in fast high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
                     </div>
                     {/* Third */}
-                    <div className="flex flex-col content-center justify-center items-center m-10">
-                        <Image width={60} height={50} className="pt-5" src="./ribbon.svg" alt="ribbon icon" />
-                        <h4 className="font-bold">Proven Track Record</h4>
-                        <span className="text-center">
-                            Careers at Deloitte (13)* and Slalom Consulting (17)* <br />
-                            <p className="text-xs italic">
-                                *Fortune Top Workplaces
-                            </p>
-                        </span>
+                    <div className="flex flex-col items-center text-center p-5 max-w-xs">
+                        <Image width={80} height={80} src="./ribbon.svg" alt="ribbon icon" />
+                        <h4 className="font-bold mt-3">Proven Track Record</h4>
+                        <p>Careers at Deloitte (13)* and Slalom Consulting (17)*</p>
+                        <p className="text-xs italic mt-2">*Fortune Top Workplaces</p>
                     </div>
                 </div>
             </section>
+
         </>
     )
 }
