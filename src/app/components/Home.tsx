@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
                 <div className=" flex content-center justify-center mr-auto">
                     <div className="rounded-lg shadow-[rgba(0,0,15,0.1)_10px_5px_4px_0px]">
-                        <Image width={1034} height={961} className="max-h-85" layout="responsive" objectFit="contain" src="./matt.svg" alt="matt's photo" />
+                        <Image width={1034} height={961} className="max-h-85" layout="responsive" objectFit="contain" src="Matt.svg" alt="matt's photo" />
                     </div>
                 </div>
             </section>
