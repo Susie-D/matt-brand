@@ -11,6 +11,7 @@
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
+    background-color: white;
 }
 .embla__slide {
   transform: translate3d(0, 0, 0);
@@ -104,4 +105,18 @@
   --admonition-note-rgb-value: 138, 180, 248;
   --admonition-warning-rgb-value: 253, 186, 116;
   --admonition-danger-rgb-value: 220, 38, 38;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .embla {
+    --slide-size: 50%; /* Make slides larger */
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 640px) {
+  .embla {
+    --slide-size: 80%; /* Make slides almost full width */
+  }
 }

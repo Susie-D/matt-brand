@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="flex justify-center md:ml-auto w-full md:w-5/6 text-center md:text-left">
                     <div className="text-primary xs:mx-14 md:mx-0 sm:mx-40">
                         <h3 className="text-3xl sm:text-4xl my-2">{`Hey, I'm Matt`}</h3>
-                        <h4 className="text-sm sm:text-base xs:text-lg text-left my-6">
+                        <h4 className="md:text-xl sm:text-base xs:text-lg text-left my-6">
                             I am a Project Manager with expertise in technology, leading and driving Cloud Projects from start to finish. I specialize in orchestrating seamless{" "}
                             <strong>cloud migrations, optimizing infrastructure,</strong> and ensuring efficient project delivery by{" "}
                             <strong>aligning business goals with technical solutions.</strong>

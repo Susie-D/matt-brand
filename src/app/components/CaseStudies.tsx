@@ -4,7 +4,7 @@ const CaseStudies = () => {
     return (
         <>
             <section className="bg-primary p-6 md:p-10 xl:p-14">
-                <h2 className="flex justify-center text-white font-semibold text-2xl sm:text-3xl lg:text-4xl italic text-center pb-6 sm:pb-10">
+                <h2 id="case-studies" className="flex justify-center text-white font-semibold text-2xl sm:text-3xl lg:text-4xl italic text-center pb-6 sm:pb-10">
                     Case Studies
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-10 xl:gap-16">
