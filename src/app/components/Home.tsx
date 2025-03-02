@@ -10,7 +10,7 @@ const Home = () => {
                     <div className="text-primary xs:mx-14 md:mx-0 sm:mx-40">
                         <h3 className="text-3xl sm:text-4xl my-2">{`Hey, I'm Matt`}</h3>
                         <h4 className="text-sm sm:text-base xs:text-lg text-left my-6">
-                            I am a Project Manager with expertise in technology, leading and driving Cloud Projects from start to finiszh. I specialize in orchestrating seamless{" "}
+                            I am a Project Manager with expertise in technology, leading and driving Cloud Projects from start to finish. I specialize in orchestrating seamless{" "}
                             <strong>cloud migrations, optimizing infrastructure,</strong> and ensuring efficient project delivery by{" "}
                             <strong>aligning business goals with technical solutions.</strong>
                         </h4>
@@ -32,23 +32,23 @@ const Home = () => {
             </section>
 
             {/* Experience Section */}
-            <section className="bg-secondary h-auto w-full flex justify-center py-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 max-w-5xl px-4 sm:px-10">
+            <section className="bg-secondary h-auto w-full flex justify-center py-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 max-w-5xl px-4 sm:px-10">
                     {/* First */}
-                    <div className="flex flex-col items-center text-center max-w-xs">
+                    <div className="flex flex-col items-center text-left max-w-xs">
                         <Image width={50} height={50} src="/consulting.svg" alt="People icon" />
                         <h4 className="font-bold mt-3">Consulting 11+ Years</h4>
                         <p>Worked with dozens of corporate clients and gained international exposure.</p>
                     </div>
                     {/* Second */}
-                    <div className="flex flex-col items-center text-center max-w-xs">
+                    <div className="flex flex-col items-center text-left max-w-xs">
                         <Image width={50} height={50} src="/buildings.svg" alt="Building icon" />
                         <h4 className="font-bold mt-3">Fortune 500 Exposure</h4>
                         <p>Thrives in high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
                     </div>
                     {/* Third */}
-                    <div className="flex flex-col items-center text-center max-w-xs">
-                        <Image width={50} height={50} src="/ribbon.svg" alt="Ribbon icon" />
+                    <div className="flex flex-col items-center text-left max-w-xs">
+                        <Image width={40} height={40} src="/ribbon.svg" alt="Ribbon icon" />
                         <h4 className="font-bold mt-3">Proven Track Record</h4>
                         <p>Careers at Deloitte (13)* and Slalom Consulting (17)*</p>
                         <p className="text-xs italic mt-2">*Fortune Top Workplaces</p>
