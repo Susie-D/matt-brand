@@ -18,11 +18,12 @@ async function Page() {
         <source src="downtown.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="bg-secondary h-[200px] flex items-center justify-center text-white">
-        <h2 className="text-4xl italic text-center font-bold">
+      <div className="bg-gradient-to-r from-primary to-secondary min-h-[200px] flex items-center justify-center text-white py-10">
+        <h2 className="text-2xl md:text-4xl italic text-center font-bold max-w-[90%] tracking-wide drop-shadow-lg md:drop-shadow-2xl text-shadow-xl text-glow">
           Driving Cloud Projects Forward with Excellence and Strategy
         </h2>
       </div>
+
       <Home />
       <CaseStudies />
       <EmblaCarousel images={images} duration={2000} options={{ loop: true }} />
