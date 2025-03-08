@@ -3,9 +3,9 @@ export default function Location() {
     return (
         <section className="bg-secondary">
             <div className="grid md:grid-cols-2">
-                <img src="MSP.svg" alt="phone and accessories" className="w-full h-auto" />
+                <img src="MSP.svg" alt="phone and accessories" className="w-half lg:h-full sm:h-full sm:w-half object-cover" />
                 <div className="flex flex-col items-center justify-center content-center space-y-4">
-                    <div className="text-xl">
+                    <div className="text-xl sm:m-12 xs:m-12">
                         <p className="text-xl">
                             60 South 6th Street, Suite 2800
                             <br />
