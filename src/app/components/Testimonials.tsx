@@ -1,6 +1,6 @@
 export default function Testimonials() {
     return (
-        <section className="bg-gradient-to-r from-secondary to-primary/60 p-14">
+        <section className="bg-gradient-to-r from-secondary to-primary/80 p-14">
             <h2 id="testimonials" className="flex justify-center text-white font-semibold text-4xl italic text-center pb-10">
                 What Clients Are Saying...
             </h2>
