@@ -1,12 +1,13 @@
-
 export default function Location() {
     return (
         <section className="bg-secondary">
-            <div className="grid md:grid-cols-2">
-                <img src="MSP.svg" alt="phone and accessories" className="w-half lg:h-full sm:h-full sm:w-half object-cover" />
-                <div className="flex flex-col items-center justify-center content-center space-y-4">
-                    <div className="text-xl sm:m-12 xs:m-12">
-                        <p className="text-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
+                <div className="w-full h-full flex justify-center items-center">
+                    <img src="MSP.svg" alt="Minneapolis location map" className="w-full h-full object-cover" />
+                </div>
+                <div className="flex flex-col justify-center items-center p-12 w-full">
+                    <div className="text-center text-xl">
+                        <p className="lg:text-2xl sm:text-lg">
                             60 South 6th Street, Suite 2800
                             <br />
                             Minneapolis, MN&nbsp; 55401
@@ -20,6 +21,6 @@ export default function Location() {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     );
 }

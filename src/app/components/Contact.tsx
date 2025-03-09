@@ -1,19 +1,19 @@
-
 export default function Contact() {
     return (
         <section className="bg-green">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className='content-around align-center p-12'>
-                    <h2 className="flex justify-left text-black font-semibold text-4xl italic text-center mb-10">Get in Touch!</h2>
-                    <h3 className="text-lg mb-10">Schedule a free 1:1 introductory session with me to discuss your Cloud Project Management needs.</h3>
-                    <button className="flex py-4 justify-self-end hover:text-primary hover:bg-tertiary border-solid border-2 hover:border-white rounded-lg bg-primary text-white border-secondary w-[100%]">
-                        <span className="flex text-nowrap font-bold mx-10 lg:text-base text-lg">Book Consultation
-                        </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full">
+                <div className="flex flex-col justify-center items-center p-12 w-full">
+                    <h2 className="text-black font-semibold text-4xl italic text-center mb-10">Get in Touch!</h2>
+                    <h3 className="text-lg mb-10 text-center">Schedule a free 1:1 introductory session with me to discuss your Cloud Project Management needs.</h3>
+                    <button className="py-4 px-10 hover:text-primary hover:bg-tertiary border-2 hover:border-white rounded-lg bg-primary text-white border-secondary w-full max-w-xs">
+                        <span className="font-bold text-lg">Book Consultation</span>
                     </button>
                 </div>
-                <img src="phone.svg" alt="phone and accessories" className="w-half lg:h-full sm:h-full sm:w-half object-cover"
-                />
+                <div className="w-full h-full flex justify-center items-center">
+                    <img src="phone.svg" alt="phone and accessories" className="w-full h-full object-cover" />
+                </div>
             </div>
         </section>
     )
 }
+
