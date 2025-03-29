@@ -1,12 +1,16 @@
+import Image from "next/image"
+
 export default function AboutMe() {
     return (
         <section className="bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
                 <div className="w-full h-full flex justify-center items-center">
-                    <img
+                    <Image
                         src="/sky.svg"
                         alt="view out of an airplane"
                         className="w-full h-full object-cover"
+                        width={200}
+                        height={200}
                     />
                 </div>
                 <div className="p-12 flex flex-col justify-center w-full">
@@ -24,7 +28,7 @@ export default function AboutMe() {
 
                     <h3 className="text-xl font-bold mb-3">Independent Consultant</h3>
                     <p className="text-base mb-10">
-                        In light of the pandemic, it came time to really reflect on the direction I wanted to take. Consulting had always been perfect for me, and the thought of being independent took it to the next level! Now, I could be fully unbiased in my recommendations while maintaining the same client standards that I had learned to adhere to! It’s been a great journey, and I hope you're next!
+                        In light of the pandemic, it came time to really reflect on the direction I wanted to take. Consulting had always been perfect for me, and the thought of being independent took it to the next level! Now, I could be fully unbiased in my recommendations while maintaining the same client standards that I had learned to adhere to! It’s been a great journey, and I hope you&apos;re next!
                     </p>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonials() {
     return (
         <section className="bg-gradient-to-r from-secondary to-primary/80 p-14">
@@ -12,11 +14,12 @@ export default function Testimonials() {
                     <p className="m-0 text-s">Ayman Nasser, Cargill</p>
                     <div className="m-0 text-s font-bold">Global IT Modernization Lead</div>
                 </div>
-                <img
+                <Image
                     src="/laptop.svg"
                     alt="Public Folder Image"
                     className="w-full h-auto sm:w-3/4 lg:w-full mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-
+                    width={200}
+                    height={200}
                 />
                 <div className="content-around text-center sm:text-left">
                     <p className="italic mb-3 text-lg text-white font-bold">
@@ -25,10 +28,12 @@ export default function Testimonials() {
                     <p className="m-0 text-s">Aaron Murray, Securian Financial Enterprise</p>
                     <div className="m-0 text-s font-bold">Cloud Director</div>
                 </div>
-                <img
+                <Image
                     src="/street.svg"
                     alt="Public Folder Image"
                     className="w-full h-auto sm:w-3/4 lg:w-full mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+                    width={200}
+                    height={200}
                 />
             </div>
         </section>
