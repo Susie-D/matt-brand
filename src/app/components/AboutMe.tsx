@@ -10,7 +10,7 @@ export default function AboutMe() {
                     />
                 </div>
                 <div className="p-12 flex flex-col justify-center w-full">
-                    <h2 className="text-black font-semibold text-4xl italic text-center mb-10">My Cloud Journey</h2>
+                    <h2 id="about" className="text-black font-semibold text-4xl italic text-center mb-10">My Cloud Journey</h2>
 
                     <h3 className="text-xl font-bold mb-3">Beginnings</h3>
                     <p className="text-base mb-10">

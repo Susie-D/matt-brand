@@ -2,7 +2,7 @@ export default function Location() {
     return (
         <section className="bg-secondary">
             <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
-                <div className="w-full h-full flex justify-center items-center">
+                <div id="location" className="w-full h-full flex justify-center items-center">
                     <img src="MSP.svg" alt="Minneapolis location map" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col justify-center items-center p-12 w-full">

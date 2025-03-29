@@ -67,6 +67,9 @@ export default function MobileMenu() {
                     <li>
                         <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#location">Location</Link>
+                    </li>
                 </ul>
             </nav >
         </div >
