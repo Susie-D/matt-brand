@@ -15,12 +15,14 @@ const Home = () => {
                             <strong>aligning business goals with technical solutions.</strong>
                         </h4>
                         <div className="flex justify-self-end">
-                            <button className="relative mt-4 flex justify-center items-center py-4 px-6 mx-auto md:mx-0 rounded-xl text-white font-bold text-lg border-1 bg-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent box-border">
-                                <span className="relative z-10 lg:text-2xl md:text-xl">Work with Me</span>
-                                <svg className="ml-2 w-5 h-5 self-center transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                                </svg>
-                            </button>
+                            <a href="https://calendly.com/smartpropertymanagement/cloud-pm-intro" target="_blank" rel="noopener noreferrer">
+                                <button className="relative mt-4 flex justify-center items-center py-4 px-6 mx-auto md:mx-0 rounded-xl text-white font-bold text-lg border-1 bg-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:border-transparent box-border">
+                                    <span className="relative z-10 lg:text-2xl md:text-xl">Work with Me</span>
+                                    <svg className="ml-2 w-5 h-5 self-center transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                    </svg>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
