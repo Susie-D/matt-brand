@@ -34,13 +34,18 @@ export default function MobileMenu() {
     return (
         <div className="md:hidden flex items-center ml-4">
             {/* Hamburger button */}
-            <Image width={55} height={55} src="./nav.svg" alt="hamburger menu"
+            <Image
+                width={70}
+                height={70}
+                src="./nav.svg"
+                alt="hamburger menu"
                 className={`fixed top-5 ml-2 mb-2 hamburger ${mobileNavOpen && 'active'}`}
                 aria-controls="mobile-nav"
                 aria-expanded={mobileNavOpen}
-                onClick={() => setMobileNavOpen(!mobileNavOpen)} />
+                onClick={() => setMobileNavOpen(!mobileNavOpen)}
+            />
             <span className="sr-only">Menu</span>
-            {/*Mobile navigation */}
+            {/* Mobile navigation */}
             <nav
                 id="mobile-nav"
                 ref={mobileNav}
@@ -64,14 +69,21 @@ export default function MobileMenu() {
                     <li>
                         <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#about">About</Link>
                     </li>
-                    <li>
-                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#contact">Contact</Link>
+                    <li className="flex py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50">
+                        <a className="flex text-xl" href="https://x.com/migratewithmatt" target="_blank" rel="noopener noreferrer">
+                            <Image width={45} height={45} src="./x.svg" alt="X (Twitter) logo" />
+                        </a>
+                    </li>
+                    <li className="flex py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50">
+                        <a className="flex text-xl" href="https://www.linkedin.com/in/mattschober/" target="_blank" rel="noopener noreferrer">
+                            <Image width={45} height={45} src="./linkedin.svg" alt="LinkedIn logo" />
+                        </a>
                     </li>
                     <li>
-                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="#location">Location</Link>
+                        <Link className="flex text-xl text-slate-300 hover:text-primary py-5 px-16 hover:bg-tertiary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-120 hover:opacity-50" href="https://calendly.com/smartpropertymanagement/cloud-pm-intro">{`Let's Chat`}</Link>
                     </li>
                 </ul>
-            </nav >
-        </div >
+            </nav>
+        </div>
     )
 }

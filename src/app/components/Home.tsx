@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             {/* Hero Section */}
-            <section id="home" className="flex flex-col md:flex-row items-center bg-white h-auto p-10 sm:px-10 md:p-20 gap-8 md:gap-16 overflow-auto">
+            <section id="home" className="flex flex-col md:flex-row items-center bg-white h-auto p-10 sm:p-10 md:p-20 gap-8 md:gap-16 overflow-auto">
                 <div className="flex justify-center md:ml-auto w-full md:w-5/6 text-center md:text-left">
                     <div className="text-primary xs:mx-14 md:mx-0 sm:mx-40">
                         <h3 className="text-3xl sm:text-4xl my-2">{`Hey, I'm Matt`}</h3>
@@ -32,25 +32,43 @@ const Home = () => {
             </section>
 
             {/* Experience Section */}
-            <section className="bg-secondary h-auto w-full flex justify-center py-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 max-w-5xl px-4 sm:px-10">
+            <section className="bg-secondary h-auto w-full flex justify-center py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-40 w-full px-10">
                     {/* First */}
-                    <div className="flex flex-col items-center text-left max-w-xs">
-                        <Image width={50} height={50} src="/consulting.svg" alt="People icon" />
-                        <h4 className="font-bold mt-3">Consulting 11+ Years</h4>
-                        <p>Worked with dozens of corporate clients and gained international exposure.</p>
+                    <div className="flex flex-col items-center text-center w-full">
+                        <Image
+                            width={100}
+                            height={100}
+                            src="/consulting.svg"
+                            alt="Icon representing consulting, showing a group of people"
+                            className="object-contain"
+                        />
+                        <h4 className="font-semibold mt-3 text-xl sm:text-2xl leading-tight">Consulting 11+ Years</h4>
+                        <p className="text-base sm:text-lg leading-relaxed mt-2">Worked with dozens of corporate clients and gained international exposure.</p>
                     </div>
                     {/* Second */}
-                    <div className="flex flex-col items-center text-left max-w-xs">
-                        <Image width={50} height={50} src="/buildings.svg" alt="Building icon" />
-                        <h4 className="font-bold mt-3">Fortune 500 Exposure</h4>
-                        <p>Thrives in high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
+                    <div className="flex flex-col items-center text-center w-full">
+                        <Image
+                            width={100}
+                            height={100}
+                            src="/buildings.svg"
+                            alt="Icon of corporate buildings symbolizing Fortune 500 exposure"
+                            className="object-contain"
+                        />
+                        <h4 className="font-semibold mt-3 text-xl sm:text-2xl leading-tight">Fortune 500 Exposure</h4>
+                        <p className="text-base sm:text-lg leading-relaxed mt-2">Thrives in high-stakes environments, ensuring clarity and decisive action amid complexity.</p>
                     </div>
                     {/* Third */}
-                    <div className="flex flex-col items-center text-left max-w-xs">
-                        <Image width={40} height={40} src="/ribbon.svg" alt="Ribbon icon" />
-                        <h4 className="font-bold mt-3">Proven Track Record</h4>
-                        <p>Careers at Deloitte (13)* and Slalom Consulting (17)*</p>
+                    <div className="flex flex-col items-center text-center w-full">
+                        <Image
+                            width={100}
+                            height={100}
+                            src="/ribbon.svg"
+                            alt="Ribbon icon symbolizing proven track record"
+                            className="object-contain"
+                        />
+                        <h4 className="font-semibold mt-3 text-xl sm:text-2xl leading-tight">Proven Track Record</h4>
+                        <p className="text-base sm:text-lg leading-relaxed mt-2">Careers at Deloitte (13)* and Slalom Consulting (17)*</p>
                         <p className="text-xs italic mt-2">*Fortune Top Workplaces</p>
                     </div>
                 </div>

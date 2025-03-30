@@ -14,9 +14,21 @@ async function Page() {
   return (
     <div className="app">
       <Navbar />
-      <video id="video" muted loop>
+      <video
+        id="video"
+        autoPlay
+        muted
+        loop
+        aria-label="A downtown scene video playing in the background"
+        className="w-full h-auto"
+      >
         <source src="downtown.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src="downtown.webm" type="video/webm" />
+        <source src="downtown.ogv" type="video/ogv" />
+
+        <p>Your browser does not support the video tag. Please upgrade your browser or view the video in a supported format.</p>
+
+        <track kind="captions" label="English" srcLang="en" src="downtown-captions-en.vtt" default />
       </video>
       <div className="bg-gradient-to-r from-primary to-secondary min-h-[200px] flex items-center justify-center text-white py-10">
         <h2 className="text-2xl md:text-4xl italic text-center font-bold max-w-[90%] tracking-wide drop-shadow-lg md:drop-shadow-2xl text-shadow-xl text-glow">

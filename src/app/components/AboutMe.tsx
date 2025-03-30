@@ -14,24 +14,27 @@ export default function AboutMe() {
                     />
                 </div>
                 <div className="p-12 flex flex-col justify-center w-full">
-                    <h2 id="about" className="text-black font-semibold text-4xl italic text-center mb-10">My Cloud Journey</h2>
-
-                    <h3 className="text-xl font-bold mb-3">Beginnings</h3>
-                    <p className="text-base mb-10">
-                        It didn’t take long for me to realize that technology was where I wanted to focus my career. After graduating from the University of Minnesota - Twin Cities with an engineering degree, I joined Deloitte Consulting, where I traveled across the country every week for 4 years. The experience was invaluable, accelerating my growth and equipping me with skills that felt like 8 years of experience compressed into 4.
+                    <h2 id="about" className="text-black font-semibold text-4xl italic text-center mb-10">
+                        My Cloud Journey
+                    </h2>
+                    <h3 className="text-2xl font-bold mb-3">Beginnings</h3>
+                    <p className="lg:text-xl m:text-base mb-10">
+                        {`From the start, I knew technology was my path. After earning my engineering degree from the University of Minnesota - Twin Cities, I dove into consulting with Deloitte, traveling coast to coast for four years. The pace was relentless, but it accelerated my growth—what felt like eight years of experience compressed into four.`}
                     </p>
 
-                    <h3 className="text-xl font-bold mb-3">Local Model</h3>
-                    <p className="text-base mb-10">
-                        I was tired of travel and I wanted to start a family! In 2018, I got married, and our daughter Adeline was born in early 2019. I chose to stay with the local model and joined Slalom Consulting. I was aligned with their cloud services and would float between technology enablement and delivery services.
+                    <h3 className="text-2xl font-bold mb-3">Local Model</h3>
+                    <p className="lg:text-xl m:text-base mb-10">
+                        {`After years of constant travel, I found myself craving something different—stability, a deeper connection to home, and the chance to build a family. In 2019, my daughter Adeline, was born into the world—moment changed everything. I knew I wanted to be present, to create a life where I could grow both personally and professionally without sacrificing time with my family.  I pivoted to Slalom Consulting, where I could stay local, shape cloud solutions, and build something lasting—both in my career and at home.`}
+                        <br /> <br />
+                        {`I aligned with their cloud services practice, seamlessly navigating between technology enablement and delivery services. It was a role that challenged me technically while allowing me to build meaningful relationships—both at work and at home.`}
                     </p>
 
-                    <h3 className="text-xl font-bold mb-3">Independent Consultant</h3>
-                    <p className="text-base mb-10">
-                        In light of the pandemic, it came time to really reflect on the direction I wanted to take. Consulting had always been perfect for me, and the thought of being independent took it to the next level! Now, I could be fully unbiased in my recommendations while maintaining the same client standards that I had learned to adhere to! It’s been a great journey, and I hope you&apos;re next!
+                    <h3 className="text-2xl font-bold mb-3">Independent Consultant</h3>
+                    <p className="lg:text-xl m:text-base mb-10">
+                        {`The pandemic prompted deep reflection. Consulting had always been my passion, but going independent gave me the freedom to offer truly unbiased recommendations while maintaining top-tier client standards. It’s been an exciting journey, and I look forward to what’s next—maybe with you!`}
                     </p>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

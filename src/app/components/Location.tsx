@@ -11,17 +11,21 @@ export default function Location() {
                 </div>
                 <div className="flex flex-col justify-center items-center p-12 w-full">
                     <div className="text-center text-xl">
-                        <p className="lg:text-2xl sm:text-lg">
+                        <p className="lg:text-3xl m:text-lg">
                             60 South 6th Street, Suite 2800
                             <br />
                             Minneapolis, MN&nbsp; 55401
                         </p>
                         <br />
-                        <p className="font-bold">Hours</p>
-                        <p>Monday – Friday <br /> 9am – 5pm</p>
+                        <p className="lg:text-2xl m:text-lg font-bold">Hours</p>
+                        <div className="lg:text-2xl m:text-lg">
+                            <p>Monday – Friday <br /> 9am – 5pm</p>
+                        </div>
                         <br />
-                        <p className="font-bold">Phone</p>
-                        <p>(612) 214 - 2833</p>
+                        <div className="lg:text-2xl m:text-lg">
+                            <p className="lg:text-2xl m:text-lg font-bold">Phone</p>
+                            <p>(612) 214 - 2833</p>
+                        </div>
                     </div>
                 </div>
             </div>

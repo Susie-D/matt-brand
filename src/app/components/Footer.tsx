@@ -8,10 +8,12 @@ export default function Footer() {
                 </div>
                 <div className="text-xl m-10 text-right">
                     <br />
-                    <p className="font-bold">Mailing</p>
-                    <p>Schober Consulting, LLC</p>
-                    <p>2136 Ford Parkway #8069</p>
-                    <p>St. Paul, MN&nbsp; 55116</p>
+                    <div className="lg:text-2xl m:text-lg">
+                        <p className="font-bold">Mailing</p>
+                        <p>Schober Consulting, LLC</p>
+                        <p>2136 Ford Parkway #8069</p>
+                        <p>St. Paul, MN&nbsp; 55116</p>
+                    </div>
                 </div>
             </div>
         </section>

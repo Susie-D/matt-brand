@@ -31,12 +31,14 @@ export default async function Navbar() {
                             <li>
                                 <Link className="lg:text-lg md:text-xs text-slate-300 hover:text-primary hover:bg-white p-4 rounded-md font-semibold" href="#about">About</Link>
                             </li>
-                            <li>
-                                <Link className="lg:text-lg md:text-xs text-slate-300 hover:text-primary hover:bg-white p-4 rounded-md font-semibold" href="#contact">Contact</Link>
-                            </li>
                             <li className="flex gap-4">
-                                <Image width={40} height={40} src="./linkedin.svg" alt="linkedin logo" />
-                                <Link href="/contact">
+                                <a href="https://x.com/migratewithmatt" target="_blank" rel="noopener noreferrer">
+                                    <Image width={40} height={40} src="./x.svg" alt="X (Twitter) logo" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/mattschober/" target="_blank" rel="noopener noreferrer">
+                                    <Image width={40} height={40} src="./linkedin.svg" alt="LinkedIn logo" />
+                                </a>
+                                <Link href="https://calendly.com/smartpropertymanagement/cloud-pm-intro">
                                     <button className="xl:px-4 lg:px-2 py-2 text-white border-solid border-2 border-white rounded-lg hover:bg-white hover:text-primary hover:border-primary">
                                         <span className="text-nowrap font-bold mx-2 lg:text-xs text-sm">{content.callToActionsCollection.items[0].label}
                                         </span>
